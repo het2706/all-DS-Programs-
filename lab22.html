@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container div{
+            height: 200px;
+            flex: 1 1 22%;
+        }
+
+        @media (max-width:1024px) {
+             .container div{
+                flex: 1 1 30%;
+
+            }  
+        }
+        @media (max-width:680px) {
+                .container div{
+                    flex: 1 1 45%;
+                }
+        }
+        @media (max-width:480px) {
+                .container div{
+                    flex:1 1 90%;
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style=" background-color: red;"></div>
+        <div style="background-color: yellow;"></div>
+        <div style="background-color:  aqua;"></div>
+        <div style="background-color:  black;"></div>
+    </div>
+</body>
+</html>

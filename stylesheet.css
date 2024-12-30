@@ -1,0 +1,8 @@
+.b{
+    width: 300px;
+    height: 300px;
+    align-items: right;
+    display: flex;
+    justify-self: right;
+
+}
